@@ -9,7 +9,7 @@ export class SpaceShipComponent implements OnInit {
   spaceShip = {
     modelName: 'Falcon',
     imageUrl: 'assets/space-1.png',
-    health: 120,
+    health: 100,
     activeShields: true,
     activeWeapons: false,
   };
