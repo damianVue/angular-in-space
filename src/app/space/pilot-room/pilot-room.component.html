@@ -1,0 +1,5 @@
+<h1>Pilot Room!</h1>
+<app-pilot *ngFor="let pilot of pilots" [pilot]="pilot" [class.selected]="selectedPilot === pilot">
+  <button *ngIf="selectedPilot !== pilot" class="btn btn-primary" (click)="select(pilot)">Zaznacz</button>
+  <button *ngIf="selectedPilot === pilot" class="btn btn-secondary" (click)="select(null)">Odznacz</button>
+</app-pilot>

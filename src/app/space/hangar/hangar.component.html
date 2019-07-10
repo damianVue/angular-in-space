@@ -1,11 +1,11 @@
 <div class="container">
-  <h1>Hangar space ships</h1>
+  <h1>Hangar</h1>
   <div class="row">
-    <div class="col-7">
-      col-10
+    <div class="col-7" style="display:flex; flex-direction: column">
+      <app-space-ship *ngFor="let spaceShip of spaceShips" [spaceShip]="spaceShip"></app-space-ship>
     </div>
     <div class="col-4">
-      <app-space-ship></app-space-ship>
+      <app-pilot-room></app-pilot-room>
     </div>
   </div>
 </div>

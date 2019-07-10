@@ -1,8 +1,9 @@
-<div class="card" style="width: 15rem;">
-  <div class="card-body">
+<div style="width: 15rem; margin: 20px;">
+  <div>
     <h4>{{ spaceShip.modelName }}</h4>
     <div class="images">
       <img [src]="spaceShip.imageUrl">
+      <img class="pilot" *ngIf="spaceShip.pilot" [src]="spaceShip.pilot.imageUrl" alt="">
     </div>
     <div class="health" [title]="'Health ' + spaceShip.health + '%'">
       <div [style.width.%]="spaceShip.health"></div>

@@ -33,3 +33,14 @@ img {
 .property.in-active {
   color: orangered;
 }
+
+.images {
+  position: relative;
+}
+
+.images .pilot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+}
