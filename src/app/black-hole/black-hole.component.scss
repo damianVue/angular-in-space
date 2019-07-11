@@ -1,0 +1,24 @@
+:host {
+  display: block;
+  background-image: url('/assets/black-hole.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.link-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  background: red;
+  border: none;
+  color: white;
+  font-size: 14px;
+}

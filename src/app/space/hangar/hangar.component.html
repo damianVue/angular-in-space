@@ -2,13 +2,14 @@
   <h1>Hangar</h1>
   <div class="row">
     <div class="col-7" style="display:flex; flex-direction: column">
-      <app-space-ship *ngFor="let spaceShip of spaceShips" [spaceShip]="spaceShip">
+      <app-space-ship *ngFor="let spaceShip of spaceShips | async" [spaceShip]="spaceShip">
         <button *ngIf="selectedPilot && !spaceShip.pilot" (click)="assignPilot(spaceShip)" class="btn btn-primary">Pilot</button>
         <button *ngIf="spaceShip.pilot" (click)="deassignPilot(spaceShip)" class="btn btn-danger">Leave</button>
       </app-space-ship>
     </div>
     <div class="col-4">
       <app-pilot-room (selected)="selectedPilot = $event"></app-pilot-room>
+      <app-engineers-room></app-engineers-room>
     </div>
   </div>
 </div>
