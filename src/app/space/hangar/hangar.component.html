@@ -9,7 +9,15 @@
     </div>
     <div class="col-4">
       <app-pilot-room (selected)="selectedPilot = $event"></app-pilot-room>
-      <app-engineers-room></app-engineers-room>
+      <div>
+        <nav>
+          <ul>
+            <li><a routerLink="production" routerLinkActive="active">Production</a></li>
+            <li><a routerLink="destruction" routerLinkActive="active">Destruction</a></li>
+          </ul>
+        </nav>
+      </div>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

@@ -24,4 +24,10 @@ export class SpaceShipService {
       tap((spaceShip) => this.hangarShips.next([...this.hangarShips.getValue(), spaceShip])),
     );
   }
+
+  removeShip(index: number) {
+    const ships = [...this.hangarShips.getValue()];
+    ships.splice(index, 1);
+    this.hangarShips.next(ships);
+  }
 }
