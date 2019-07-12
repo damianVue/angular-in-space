@@ -112,7 +112,8 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-in-space:serve"
+            "devServerTarget": "angular-in-space:serve",
+            "port": 4210
           },
           "configurations": {
             "production": {
